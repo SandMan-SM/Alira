@@ -10,10 +10,9 @@ export function Header() {
     const [open, setOpen] = useState(false);
 
     const navLinks = [
-        { label: "Principles", href: "/principles" },
-        { label: "Programs", href: "/programs" },
-        { label: "Membership", href: "/membership" },
-        { label: "About", href: "/about" },
+        { label: "Enrollment", href: "/enrollment" },
+        { label: "Newsletter", href: "/newsletter" },
+        { label: "Inventory", href: "/inventory" },
     ];
 
     return (
@@ -40,7 +39,7 @@ export function Header() {
                     </nav>
 
                     {/* Desktop CTA */}
-                    <div className="hidden md:flex items-center gap-3 lg:gap-5">
+                    <div className="hidden md:flex items-center gap-4 lg:gap-6">
                         <Link
                             href="/login"
                             className="px-5 py-2 bg-[#8b5cf6] text-white text-[11px] font-bold tracking-[0.18em] uppercase rounded-full hover:bg-white transition-all duration-200 btn-primary"
@@ -83,7 +82,7 @@ export function Header() {
                                     key={l.href}
                                     href={l.href}
                                     onClick={() => setOpen(false)}
-                                    className="py-3.5 sm:py-4 text-[11px] font-semibold tracking-[0.18em] uppercase text-white/40 hover:text-white border-b border-white/[0.06] transition-colors"
+                                    className="py-4 sm:py-4 text-[11px] font-semibold tracking-[0.18em] uppercase text-white/40 hover:text-white border-b border-white/[0.06] transition-colors"
                                 >
                                     {l.label}
                                 </Link>
@@ -94,7 +93,7 @@ export function Header() {
                             <Link
                                 href="/login"
                                 onClick={() => setOpen(false)}
-                                className="block w-full text-center py-3.5 bg-[#8b5cf6] text-white text-[11px] font-bold tracking-[0.18em] uppercase rounded-full hover:bg-white transition-colors btn-primary"
+                                className="block w-full text-center py-4 bg-[#8b5cf6] text-white text-[11px] font-bold tracking-[0.18em] uppercase rounded-full hover:bg-white transition-colors btn-primary"
                             >
                                 Sign In
                             </Link>

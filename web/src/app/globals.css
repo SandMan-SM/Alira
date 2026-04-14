@@ -26,6 +26,9 @@
 
   html {
     scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-size-adjust: 100%;
   }
 
   body {
@@ -34,6 +37,16 @@
     font-family: 'Inter', system-ui, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    overscroll-behavior: none;
+  }
+
+  @media (max-width: 768px) {
+    body {
+      font-size: 16px;
+      line-height: 1.5;
+    }
   }
 
   ::-webkit-scrollbar {
@@ -52,6 +65,19 @@
   ::selection {
     background: rgba(139, 92, 246, 0.2);
     color: #fff;
+  }
+
+  a, button, input, select, textarea {
+    touch-action: manipulation;
+  }
+
+  a {
+    text-decoration-skip-ink: auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -122,6 +148,16 @@
     position: relative;
     overflow: hidden;
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    min-height: 44px;
+    min-width: 44px;
+    padding: 12px 24px;
+  }
+
+  @media (max-width: 768px) {
+    .btn-primary {
+      padding: 14px 28px;
+      font-size: 12px;
+    }
   }
 
   .btn-primary:hover {
@@ -152,6 +188,16 @@
     font-weight: 600;
     letter-spacing: 0.05em;
     transition: all 0.3s ease;
+    min-height: 44px;
+    min-width: 44px;
+    padding: 12px 24px;
+  }
+
+  @media (max-width: 768px) {
+    .btn-secondary {
+      padding: 14px 28px;
+      font-size: 12px;
+    }
   }
 
   .btn-secondary:hover {

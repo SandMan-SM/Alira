@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+  alira-telegram-bot:
+    build:
+      context: ./telegram-bot
+      dockerfile: Dockerfile
+    container_name: alira-telegram-bot
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN:-ALIRA_TELEGRAM_BOT_TOKEN}
+      - ADMIN_CHAT_ID=${ADMIN_CHAT_ID:-your_admin_chat_id}
+      - ADMIN_USERNAME=${ADMIN_USERNAME:-alira_admin}
+      - DEBUG=${DEBUG:-false}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+    volumes:
+      - ./telegram-bot/alira.db:/app/alira.db
+      - ./telegram-bot/logs:/app/logs
+    networks:
+      - alira-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "python", "-c", "import telegram; print('Bot alive')"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  alira-ai-ceo:
+    build:
+      context: ./ai-ceo
+      dockerfile: Dockerfile
+    container_name: alira-ai-ceo
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN:-ALIRA_TELEGRAM_BOT_TOKEN}
+      - ADMIN_CHAT_ID=${ADMIN_CHAT_ID:-your_admin_chat_id}
+      - DEBUG=${DEBUG:-false}
+      - LOG_LEVEL=${LOG_LEVEL:-INFO}
+    volumes:
+      - ./telegram-bot/alira.db:/app/alira.db
+      - ./ai-ceo/logs:/app/logs
+      - ./ai-ceo/reports:/app/reports
+    depends_on:
+      - alira-telegram-bot
+    networks:
+      - alira-network
+    restart: unless-stopped
+
+networks:
+  alira-network:
+    driver: bridge
