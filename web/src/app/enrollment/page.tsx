@@ -86,8 +86,9 @@ export default function EnrollmentPage() {
 
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-white/60 text-sm mb-2">First Name</label>
+                    <label htmlFor="enroll-first-name" className="block text-white/60 text-sm mb-2">First Name</label>
                     <input
+                      id="enroll-first-name"
                       type="text"
                       required
                       value={formData.first_name}
@@ -97,8 +98,9 @@ export default function EnrollmentPage() {
                     />
                   </div>
                   <div>
-                    <label className="block text-white/60 text-sm mb-2">Last Name</label>
+                    <label htmlFor="enroll-last-name" className="block text-white/60 text-sm mb-2">Last Name</label>
                     <input
+                      id="enroll-last-name"
                       type="text"
                       required
                       value={formData.last_name}
@@ -110,8 +112,9 @@ export default function EnrollmentPage() {
                 </div>
 
                 <div className="mt-4">
-                  <label className="block text-white/60 text-sm mb-2">Email</label>
+                  <label htmlFor="enroll-email" className="block text-white/60 text-sm mb-2">Email</label>
                   <input
+                    id="enroll-email"
                     type="email"
                     required
                     value={formData.email}
@@ -122,8 +125,9 @@ export default function EnrollmentPage() {
                 </div>
 
                 <div className="mt-4">
-                  <label className="block text-white/60 text-sm mb-2">Phone (optional)</label>
+                  <label htmlFor="enroll-phone" className="block text-white/60 text-sm mb-2">Phone (optional)</label>
                   <input
+                    id="enroll-phone"
                     type="tel"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
@@ -133,8 +137,9 @@ export default function EnrollmentPage() {
                 </div>
 
                 <div className="mt-4">
-                  <label className="block text-white/60 text-sm mb-2">Select Program</label>
+                  <label htmlFor="enroll-program" className="block text-white/60 text-sm mb-2">Select Program</label>
                   <select
+                    id="enroll-program"
                     required
                     value={formData.program}
                     onChange={(e) => setFormData({ ...formData, program: e.target.value })}

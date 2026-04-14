@@ -71,7 +71,7 @@ export function Header() {
                                 <Sparkles className="w-5 h-5" />
                                 ALIRA
                             </span>
-                            <button onClick={() => setOpen(false)} className="text-white/40 hover:text-white transition-colors">
+                            <button onClick={() => setOpen(false)} className="text-white/40 hover:text-white transition-colors" aria-label="Close menu">
                                 <X className="w-5 h-5" />
                             </button>
                         </div>

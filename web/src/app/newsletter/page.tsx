@@ -95,9 +95,10 @@ export default function NewsletterPage() {
                     onChange={(e) => setEmail(e.target.value)}
                     className="flex-1 px-6 py-4 rounded-full bg-white/10 border border-white/20 text-white placeholder:text-white/40 focus:outline-none focus:border-[#d4af37]"
                   />
-                  <button 
+                  <button
                     type="submit"
                     disabled={loading}
+                    aria-label="Subscribe to newsletter"
                     className="px-8 py-4 bg-[#d4af37] text-black font-bold tracking-[0.1em] uppercase rounded-full hover:bg-[#e5c449] transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
                   >
                     {loading ? <Loader2 className="w-5 h-5 animate-spin" /> : <Send className="w-5 h-5" />}

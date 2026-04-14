@@ -128,8 +128,9 @@ export default function ContactPage() {
                   
                   <div className="grid grid-cols-2 gap-4">
                     <div>
-                      <label className="block text-white/70 text-sm mb-2">First Name</label>
-                      <input 
+                      <label htmlFor="contact-first-name" className="block text-white/70 text-sm mb-2">First Name</label>
+                      <input
+                        id="contact-first-name"
                         type="text"
                         value={formData.first_name}
                         onChange={(e) => setFormData({...formData, first_name: e.target.value})}
@@ -139,8 +140,9 @@ export default function ContactPage() {
                       />
                     </div>
                     <div>
-                      <label className="block text-white/70 text-sm mb-2">Last Name</label>
-                      <input 
+                      <label htmlFor="contact-last-name" className="block text-white/70 text-sm mb-2">Last Name</label>
+                      <input
+                        id="contact-last-name"
                         type="text"
                         value={formData.last_name}
                         onChange={(e) => setFormData({...formData, last_name: e.target.value})}
@@ -150,10 +152,11 @@ export default function ContactPage() {
                       />
                     </div>
                   </div>
-                  
+
                   <div>
-                    <label className="block text-white/70 text-sm mb-2">Email</label>
-                    <input 
+                    <label htmlFor="contact-email" className="block text-white/70 text-sm mb-2">Email</label>
+                    <input
+                      id="contact-email"
                       type="email"
                       value={formData.email}
                       onChange={(e) => setFormData({...formData, email: e.target.value})}
@@ -164,8 +167,9 @@ export default function ContactPage() {
                   </div>
 
                   <div>
-                    <label className="block text-white/70 text-sm mb-2">Phone (optional)</label>
-                    <input 
+                    <label htmlFor="contact-phone" className="block text-white/70 text-sm mb-2">Phone (optional)</label>
+                    <input
+                      id="contact-phone"
                       type="tel"
                       value={formData.phone}
                       onChange={(e) => setFormData({...formData, phone: e.target.value})}
@@ -173,10 +177,11 @@ export default function ContactPage() {
                       placeholder="+1 (555) 123-4567"
                     />
                   </div>
-                  
+
                   <div>
-                    <label className="block text-white/70 text-sm mb-2">Topic</label>
-                    <select 
+                    <label htmlFor="contact-topic" className="block text-white/70 text-sm mb-2">Topic</label>
+                    <select
+                      id="contact-topic"
                       value={formData.inquiry_type}
                       onChange={(e) => setFormData({...formData, inquiry_type: e.target.value})}
                       className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-[#8b5cf6]"
@@ -189,10 +194,11 @@ export default function ContactPage() {
                       <option value="support">Technical Support</option>
                     </select>
                   </div>
-                  
+
                   <div>
-                    <label className="block text-white/70 text-sm mb-2">Message</label>
-                    <textarea 
+                    <label htmlFor="contact-message" className="block text-white/70 text-sm mb-2">Message</label>
+                    <textarea
+                      id="contact-message"
                       value={formData.message}
                       onChange={(e) => setFormData({...formData, message: e.target.value})}
                       className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white placeholder-white/30 focus:outline-none focus:border-[#8b5cf6] h-32 resize-none"
