@@ -10,6 +10,7 @@ export function Header() {
     const [open, setOpen] = useState(false);
 
     const navLinks = [
+        { label: "Retreat", href: "/retreat" },
         { label: "Enrollment", href: "/enrollment" },
         { label: "Newsletter", href: "/newsletter" },
         { label: "Inventory", href: "/inventory" },

@@ -1,5 +1,5 @@
 import { Header } from "@/components/Header";
-import { Sparkles, Moon, Sun, Star, Heart, Eye, Feather, Wind } from "lucide-react";
+import { Sparkles, Moon, Sun, Star, Heart, Eye, Feather, Wind, Calendar, Crown, Flame } from "lucide-react";
 import Link from "next/link";
 
 export default function Home() {
@@ -175,6 +175,76 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Featured Retreat */}
+      <section className="py-16 sm:py-24 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <div className="absolute top-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-[#d4af37]/10 rounded-full blur-[128px]" />
+          <div className="absolute top-1/2 right-0 -translate-y-1/2 w-96 h-96 bg-[#8b5cf6]/10 rounded-full blur-[128px]" />
+        </div>
+        <div className="container mx-auto px-4 max-w-6xl relative z-10">
+          <div className="surface-card p-6 sm:p-10 md:p-14 relative overflow-hidden border-[#d4af37]/30">
+            <div className="absolute top-0 right-0 w-64 h-64 bg-[#d4af37]/15 rounded-full blur-[100px]" />
+            <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#8b5cf6]/15 rounded-full blur-[100px]" />
+
+            <div className="relative z-10 grid lg:grid-cols-5 gap-8 lg:gap-12 items-center">
+              <div className="lg:col-span-3">
+                <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#d4af37]/10 border border-[#d4af37]/30 text-[#d4af37] text-xs font-semibold tracking-[0.2em] uppercase mb-5">
+                  <Sparkles className="w-4 h-4" />
+                  Sacred Retreat · 2026
+                </div>
+                <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-display mb-4">
+                  The <span className="text-[#d4af37]">Goddess Blueprint</span> <span className="text-[#8b5cf6]">Activation</span>
+                </h2>
+                <p className="text-white/60 mb-6 text-sm sm:text-base leading-relaxed">
+                  A four-day immersion to awaken the codes of the divine feminine, embody your soul&apos;s blueprint, and rise as the woman you came here to be.
+                </p>
+
+                <div className="flex flex-wrap gap-3 mb-6">
+                  <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
+                    <Calendar className="w-3.5 h-3.5 text-[#8b5cf6]" />
+                    <span className="text-xs text-white/70">Aug 14–17, 2026</span>
+                  </div>
+                  <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
+                    <Crown className="w-3.5 h-3.5 text-[#d4af37]" />
+                    <span className="text-xs text-white/70">Utah</span>
+                  </div>
+                  <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#d4af37]/10 border border-[#d4af37]/30">
+                    <Flame className="w-3.5 h-3.5 text-[#d4af37]" />
+                    <span className="text-xs text-[#d4af37] font-semibold">Early Bird Until June 1</span>
+                  </div>
+                </div>
+
+                <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
+                  <Link href="/retreat" className="w-full sm:w-auto px-8 py-3 sm:py-4 bg-gradient-to-r from-[#d4af37] to-[#e8c84a] text-[#0a0612] font-bold tracking-[0.15em] uppercase rounded-full hover:shadow-[0_10px_30px_rgba(212,175,55,0.4)] transition-all duration-300 text-center text-sm">
+                    Reserve Your Seat
+                  </Link>
+                  <Link href="/retreat" className="text-[#8b5cf6] hover:text-[#a78bfa] text-xs font-semibold tracking-[0.15em] uppercase transition-colors">
+                    Explore the Journey →
+                  </Link>
+                </div>
+              </div>
+
+              <div className="lg:col-span-2 flex justify-center lg:justify-end">
+                <div className="text-center p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-[#d4af37]/10 to-[#8b5cf6]/10 border border-[#d4af37]/20 w-full max-w-xs">
+                  <div className="text-xs font-semibold tracking-[0.2em] uppercase text-[#d4af37] mb-2">
+                    Early Bird
+                  </div>
+                  <div className="text-5xl sm:text-6xl font-bold text-[#d4af37] mb-1">
+                    $1,444
+                  </div>
+                  <div className="text-sm text-white/40 line-through mb-4">
+                    $1,777 standard
+                  </div>
+                  <div className="text-xs text-white/50 uppercase tracking-wider">
+                    Until June 1, 2026
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials */}
       <section className="py-16 sm:py-24 bg-[#0d0915]">
         <div className="container mx-auto px-4 max-w-6xl">
@@ -232,6 +302,7 @@ export default function Home() {
             </div>
             <nav className="flex flex-wrap flex-col sm:flex-row items-center gap-4 sm:gap-6 text-xs text-white/40 uppercase tracking-widest">
               <Link href="/programs" className="hover:text-white transition-colors">Programs</Link>
+              <Link href="/retreat" className="hover:text-white transition-colors">Retreat</Link>
               <Link href="/membership" className="hover:text-white transition-colors">Membership</Link>
               <Link href="/about" className="hover:text-white transition-colors">About</Link>
               <div className="flex gap-4 mt-2 sm:mt-0">
