@@ -34,6 +34,17 @@ export const metadata: Metadata = {
   },
 };
 
+const orgJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "@id": "https://alira.com/#organization",
+  name: "ALIRA",
+  alternateName: "ALIRA - Spiritual Leadership & Consciousness Institute",
+  url: "https://alira.com",
+  description:
+    "A global spiritual guidance and education organization dedicated to consciousness development and spiritual enlightenment.",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -41,6 +52,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+        />
+      </head>
       <body className="antialiased">
         <Header />
         {children}
