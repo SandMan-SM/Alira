@@ -44,8 +44,9 @@ export default function RootLayout({
       <body className="antialiased">
         <Header />
         {children}
-        {/* Cross-portfolio sponsor embed — renders into any
-            <div id="omni-sponsor" data-slug="alira"> mount point. */}
+        {/* Cross-portfolio sponsor embed — Fred + Live Better Podcast
+            + CPS feature. Mount + script ship from every page. */}
+        <div id="omni-sponsor" data-slug="alira" data-brand="Alira" />
         <script src="https://omnileadsagi.com/embed/sponsor.js" defer />
       </body>
     </html>
