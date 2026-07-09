@@ -193,16 +193,16 @@ export default function Home() {
                   Sacred Retreat · 2026
                 </div>
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-display mb-4">
-                  The <span className="text-[#d4af37]">Goddess Blueprint</span> <span className="text-[#8b5cf6]">Activation</span>
+                  The <span className="text-[#d4af37]">Goddess Blueprint</span> <span className="text-[#8b5cf6]">Remembrance</span>
                 </h2>
                 <p className="text-white/60 mb-6 text-sm sm:text-base leading-relaxed">
-                  A four-day immersion to awaken the codes of the divine feminine, embody your soul&apos;s blueprint, and rise as the woman you came here to be.
+                  A three-day immersion to remember the codes of the divine feminine, embody your soul&apos;s blueprint, and rise as the woman you came here to be.
                 </p>
 
                 <div className="flex flex-wrap gap-3 mb-6">
                   <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
                     <Calendar className="w-3.5 h-3.5 text-[#8b5cf6]" />
-                    <span className="text-xs text-white/70">Aug 14–17, 2026</span>
+                    <span className="text-xs text-white/70">Aug 14–16, 2026</span>
                   </div>
                   <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-white/5 border border-white/10">
                     <Crown className="w-3.5 h-3.5 text-[#d4af37]" />
@@ -210,7 +210,7 @@ export default function Home() {
                   </div>
                   <div className="flex items-center gap-2 px-3 py-1.5 rounded-full bg-[#d4af37]/10 border border-[#d4af37]/30">
                     <Flame className="w-3.5 h-3.5 text-[#d4af37]" />
-                    <span className="text-xs text-[#d4af37] font-semibold">Early Bird Until June 1</span>
+                    <span className="text-xs text-[#d4af37] font-semibold">3 Days · 2 Nights</span>
                   </div>
                 </div>
 
@@ -227,16 +227,13 @@ export default function Home() {
               <div className="lg:col-span-2 flex justify-center lg:justify-end">
                 <div className="text-center p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-[#d4af37]/10 to-[#8b5cf6]/10 border border-[#d4af37]/20 w-full max-w-xs">
                   <div className="text-xs font-semibold tracking-[0.2em] uppercase text-[#d4af37] mb-2">
-                    Early Bird
+                    Sacred Seat
                   </div>
                   <div className="text-5xl sm:text-6xl font-bold text-[#d4af37] mb-1">
-                    $1,444
+                    $888
                   </div>
-                  <div className="text-sm text-white/40 line-through mb-4">
-                    $1,777 standard
-                  </div>
-                  <div className="text-xs text-white/50 uppercase tracking-wider">
-                    Until June 1, 2026
+                  <div className="text-xs text-white/50 uppercase tracking-wider mt-2">
+                    August 14–16, 2026
                   </div>
                 </div>
               </div>

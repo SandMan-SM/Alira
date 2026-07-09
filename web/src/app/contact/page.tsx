@@ -189,6 +189,7 @@ export default function ContactPage() {
                     >
                       <option value="">Select a topic</option>
                       <option value="programs">Programs & Courses</option>
+                      <option value="retreat">Goddess Blueprint Remembrance Retreat</option>
                       <option value="membership">Membership</option>
                       <option value="general">General Inquiry</option>
                       <option value="support">Technical Support</option>

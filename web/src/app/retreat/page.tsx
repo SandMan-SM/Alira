@@ -15,6 +15,7 @@ import {
   Check,
   ArrowRight,
 } from "lucide-react";
+import { RETREAT } from "@/lib/retreat";
 
 export const metadata: Metadata = {
   title: "Goddess Blueprint Remembrance Retreat | ALIRA",
@@ -112,6 +113,43 @@ const included = [
 export default function RetreatPage() {
   return (
     <div className="flex flex-col min-h-screen bg-gradient-to-br from-[#0a0612] via-[#120d1f] to-[#0a0612]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Event",
+            name: RETREAT.name,
+            startDate: RETREAT.startDate,
+            endDate: RETREAT.endDate,
+            eventAttendanceMode:
+              "https://schema.org/OfflineEventAttendanceMode",
+            eventStatus: "https://schema.org/EventScheduled",
+            description: RETREAT.description,
+            location: {
+              "@type": "Place",
+              name: RETREAT.region,
+              address: {
+                "@type": "PostalAddress",
+                addressRegion: "UT",
+                addressCountry: "US",
+              },
+            },
+            organizer: {
+              "@type": "Organization",
+              name: "ALIRA",
+              url: "https://alira.live",
+            },
+            offers: {
+              "@type": "Offer",
+              price: RETREAT.price,
+              priceCurrency: RETREAT.currency,
+              availability: "https://schema.org/InStock",
+              url: RETREAT.url,
+            },
+          }),
+        }}
+      />
       {/* Hero */}
       <section className="relative pt-[88px] sm:pt-[100px] pb-16 sm:pb-24 overflow-hidden">
         <div className="absolute inset-0 overflow-hidden">
