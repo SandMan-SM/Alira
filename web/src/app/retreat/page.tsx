@@ -17,20 +17,20 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Goddess Blueprint Activation Retreat | ALIRA",
+  title: "Goddess Blueprint Remembrance Retreat | ALIRA",
   description:
-    "A four-day sacred immersion to awaken your divine feminine blueprint. August 14–17, 2026. Early bird $1,444 until June 1.",
+    "A three-day sacred immersion to remember your divine feminine blueprint. August 14–16, 2026. Sacred seat $888.",
   openGraph: {
-    title: "Goddess Blueprint Activation Retreat | ALIRA",
+    title: "Goddess Blueprint Remembrance Retreat | ALIRA",
     description:
-      "A four-day sacred immersion to awaken your divine feminine blueprint. August 14–17, 2026.",
+      "A three-day sacred immersion to remember your divine feminine blueprint. August 14–16, 2026.",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Goddess Blueprint Activation Retreat | ALIRA",
+    title: "Goddess Blueprint Remembrance Retreat | ALIRA",
     description:
-      "A four-day sacred immersion to awaken your divine feminine blueprint. August 14–17, 2026.",
+      "A three-day sacred immersion to remember your divine feminine blueprint. August 14–16, 2026.",
   },
 };
 
@@ -91,21 +91,11 @@ const itinerary = [
   {
     day: "Day 3",
     date: "August 16",
-    title: "Sacred Embodiment",
+    title: "Embodiment & Closing",
     items: [
       "Movement medicine and ecstatic dance",
-      "Energy work and somatic release",
-      "Fireside ceremony under the stars",
-    ],
-  },
-  {
-    day: "Day 4",
-    date: "August 17",
-    title: "Integration & Closing",
-    items: [
-      "Integration practices and journaling",
-      "Vision casting and soul commitments",
-      "Closing ceremony and sisterhood blessing",
+      "Integration practices and soul commitments",
+      "Closing ceremony and sisterhood blessing under the stars",
     ],
   },
 ];
@@ -143,14 +133,14 @@ export default function RetreatPage() {
             >
               The <span className="text-[#d4af37]">Goddess Blueprint</span>
               <br />
-              <span className="text-[#8b5cf6]">Activation</span>
+              <span className="text-[#8b5cf6]">Remembrance</span>
             </h1>
 
             <p
               className="text-base sm:text-lg md:text-xl text-white/60 max-w-2xl mx-auto mb-8 sm:mb-10 animate-fade-in-up"
               style={{ animationDelay: "0.2s" }}
             >
-              A four-day immersion to awaken the codes of the divine feminine,
+              A three-day immersion to remember the codes of the divine feminine,
               embody your soul&apos;s blueprint, and rise as the woman you came here to be.
             </p>
 
@@ -161,11 +151,11 @@ export default function RetreatPage() {
             >
               <div className="flex items-center gap-2 px-4 py-2 rounded-full surface-glass">
                 <Calendar className="w-4 h-4 text-[#8b5cf6]" />
-                <span className="text-sm text-white/80">August 14–17, 2026</span>
+                <span className="text-sm text-white/80">August 14–16, 2026</span>
               </div>
               <div className="flex items-center gap-2 px-4 py-2 rounded-full surface-glass">
                 <Clock className="w-4 h-4 text-[#d4af37]" />
-                <span className="text-sm text-white/80">4 Sacred Days</span>
+                <span className="text-sm text-white/80">3 Days · 2 Nights</span>
               </div>
               <div className="flex items-center gap-2 px-4 py-2 rounded-full surface-glass">
                 <MapPin className="w-4 h-4 text-[#8b5cf6]" />
@@ -180,7 +170,7 @@ export default function RetreatPage() {
             >
               <Flame className="w-4 h-4 text-[#d4af37]" />
               <span className="text-xs sm:text-sm font-semibold tracking-wider uppercase text-[#d4af37]">
-                Early Bird $1,444 · Ends June 1
+                Sacred Seat $888 · August 14–16
               </span>
             </div>
 
@@ -223,7 +213,7 @@ export default function RetreatPage() {
               no longer fit.
             </p>
             <p className="text-base sm:text-lg text-white/70 leading-relaxed">
-              The Goddess Blueprint Activation is four days carved out of ordinary
+              The Goddess Blueprint Remembrance is three days carved out of ordinary
               time — a sacred container where she can finally step forward. You will
               leave activated, embodied, and unmistakably more yourself.
             </p>
@@ -236,7 +226,7 @@ export default function RetreatPage() {
         <div className="container mx-auto px-4 max-w-6xl">
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-display mb-4">
-              The Six <span className="text-[#8b5cf6]">Activations</span>
+              The Six <span className="text-[#8b5cf6]">Remembrances</span>
             </h2>
             <p className="text-white/60 max-w-2xl mx-auto">
               Each day weaves these sacred currents into a complete embodied
@@ -271,7 +261,7 @@ export default function RetreatPage() {
           <div className="text-center mb-12 sm:mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[#d4af37]/10 border border-[#d4af37]/20 text-[#d4af37] text-xs font-semibold tracking-[0.2em] uppercase mb-6">
               <Sun className="w-4 h-4" />
-              Four Sacred Days
+              Three Sacred Days
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-display mb-4">
               The <span className="text-[#8b5cf6]">Journey</span>
@@ -365,58 +355,29 @@ export default function RetreatPage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {/* Early Bird */}
+          <div className="max-w-md mx-auto">
             <div className="surface-card p-8 sm:p-10 relative overflow-hidden border-[#d4af37]/40">
               <div className="absolute top-0 right-0 w-40 h-40 bg-[#d4af37]/15 rounded-full blur-[80px]" />
               <div className="absolute -top-3 left-1/2 -translate-x-1/2 px-4 py-1 bg-[#d4af37] text-[#0a0612] text-xs font-bold tracking-[0.2em] uppercase rounded-full whitespace-nowrap">
-                Early Bird
+                Sacred Seat
               </div>
               <div className="relative z-10 mt-4 text-center">
                 <h3 className="text-xl sm:text-2xl font-bold text-heading mb-2">
-                  Sacred Seat
+                  Goddess Blueprint Remembrance
                 </h3>
                 <p className="text-white/50 text-sm mb-6">
-                  Available until June 1, 2026
+                  August 14–16, 2026 · 3 Days · 2 Nights
                 </p>
-                <div className="mb-2">
+                <div className="mb-6">
                   <span className="text-5xl sm:text-6xl font-bold text-[#d4af37]">
-                    $1,444
+                    $888
                   </span>
                 </div>
-                <p className="text-sm text-white/40 line-through mb-6">
-                  $1,777 standard
-                </p>
                 <Link
-                  href="/contact?retreat=goddess-blueprint-early"
+                  href="/contact?retreat=goddess-blueprint-remembrance"
                   className="block w-full py-4 text-center bg-gradient-to-r from-[#d4af37] to-[#e8c84a] text-[#0a0612] font-bold tracking-[0.15em] uppercase rounded-full hover:shadow-[0_10px_30px_rgba(212,175,55,0.4)] transition-all"
                 >
-                  Reserve Early Bird
-                </Link>
-              </div>
-            </div>
-
-            {/* Standard */}
-            <div className="surface-card p-8 sm:p-10 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-40 h-40 bg-[#8b5cf6]/15 rounded-full blur-[80px]" />
-              <div className="relative z-10 text-center">
-                <h3 className="text-xl sm:text-2xl font-bold text-heading mb-2 mt-4">
-                  Standard Seat
-                </h3>
-                <p className="text-white/50 text-sm mb-6">
-                  After June 1, 2026
-                </p>
-                <div className="mb-2">
-                  <span className="text-5xl sm:text-6xl font-bold text-[#8b5cf6]">
-                    $1,777
-                  </span>
-                </div>
-                <p className="text-sm text-white/40 mb-6">Full investment</p>
-                <Link
-                  href="/contact?retreat=goddess-blueprint"
-                  className="block w-full py-4 text-center border border-[#8b5cf6]/40 text-[#8b5cf6] font-bold tracking-[0.15em] uppercase rounded-full hover:bg-[#8b5cf6]/10 transition-all"
-                >
-                  Reserve Standard
+                  Reserve Your Seat
                 </Link>
               </div>
             </div>
@@ -424,7 +385,7 @@ export default function RetreatPage() {
 
           <p className="text-center text-white/40 text-xs mt-10 max-w-xl mx-auto">
             Payment plans available upon request. A non-refundable deposit secures
-            your space — full balance due July 14, 2026.
+            your space.
           </p>
         </div>
       </section>
